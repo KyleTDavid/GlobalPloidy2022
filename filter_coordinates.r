@@ -1,4 +1,6 @@
-#script used to further filter and format GBIF coordinates for downstream analyses 
+#script used to further filter and format GBIF coordinates for downstream analyses
+
+#dependencies
 library(rotl)
 library(dplyr)
 library(tidyr)
