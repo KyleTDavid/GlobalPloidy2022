@@ -24,7 +24,6 @@ ploidy <- ploidy[1:2]
 
 #merge environmental data table with ploidy assignments
 df <- merge(geo, ploidy, all = TRUE)
-df[!(df$species %in% ploidy$species),]$ploidy <- 0
 rownames(df) <- unlist(df$species)
 
 #alternative ploidy assignment using only species with confirmed chromosome counts (see manuscript for details)
