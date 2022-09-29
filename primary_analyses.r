@@ -1,12 +1,14 @@
 #script used for all primary analyses 
+
+#dependencies
 library(readxl)
 library(ape)
 library(dplyr)
 library(geiger)
 library(effsize)
 
-# load data
-dir.create("Amphibia_polyver_results")
+#create directory to hold results
+dir.create("Amphibia_results")
 geo <- read.csv("Amphibia_geodata.txt", sep='\t')
 
 # load ploidy inferences
