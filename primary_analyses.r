@@ -10,7 +10,7 @@ library(effsize)
 #create directory to hold results
 dir.create("Amphibia_results")
 
-#read environmental data table (for example: HERE)
+#read environmental data table (for example: https://figshare.com/account/projects/145482/articles/20457030?file=36614874)
 geo <- read.csv("Amphibia_geodata.txt", sep='\t')
 
 #load ploidy inferences (Table S3 in manuscript)
