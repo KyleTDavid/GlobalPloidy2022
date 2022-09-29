@@ -22,11 +22,11 @@ delta_prec <- prec - raster("geodata//cclgmbiprec.tif")
 delta_temp_season <- temp_season - raster("geodata/cclgmbiseasontemp.tif")
 delta_prec_season <- prec_season - raster("geodata/cclgmbiseasonprec.tif")
 
-#read SEDAC anthropogenic impact rasters
+#read anthropogenic impact rasters
 human_impacts <- raster("geodata/human_impacts/hii_v2geo/dblbnd.adf")
 land_use <- raster("geodata/gl-croplands-geotif/cropland.tif") + raster ("geodata/gl-pastures-geotif/pasture.tif")
 
-#read custom raster of species richness (see manuscript for details)
+#read raster of species richness (see manuscript for details)
 total_richness <- raster("geodata/species_richness.tif")
 
 #convert coordinates to SpatialPoints object 
