@@ -31,7 +31,7 @@ df$species <- gsub(" \\(species in.*", "", df$species)
 df$species <- sub("^([^ ]* [^ ]*).*", "\\1", df$species)
 
 # filter entries not in tree
-tree <- read.tree('~/Desktop/global_poly/Insecta_tree.nh')
+tree <- read.tree('~/Desktop/global_poly/Amphibia_tree.nh')
 df <- df[gsub(" ", "_", df$species) %in% tree$tip.label,]
 
 # convert country code from ISO2c to ISO3c
