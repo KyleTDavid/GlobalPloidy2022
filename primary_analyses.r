@@ -13,7 +13,7 @@ dir.create("Amphibia_results")
 #read environmental data table (for example: https://figshare.com/account/projects/145482/articles/20457030?file=36614874)
 geo <- read.csv("Amphibia_geodata.txt", sep='\t')
 
-#load ploidy inferences (Table S3 in manuscript)
+#load ploidy inferences (Data S3 in manuscript)
 ploidy <- read_excel("Table_S3.xlsx", sheet = "Amphibia", col_names = c("species", "ploidy", "source", "comments"), na = "NA")
 
 #alternative ploidy assignment using a more strict definition of polyploidy (see manuscript for details)
